@@ -54,16 +54,14 @@
                     </div>
                 </div>
                 <script>
-                    $(function() { // Routine format; put all your jQuery initialisation inside
-                        $('#calculate').click(function() { // Set the mouse click event hander for element "#calculate"
-                            // Normal Javascript here
-                            // Do whatever you want
+                    $(function() {
+                        $('#calculate').click(function() {
                             var amount = $('#amount').val();
                             var unit = $('#unit').val();
                             var total = 100 / (amount / unit) / 12;
                             $('#total').val(total);
                         });
-                    }); // Routine format; put all your jQuery initialisation inside
+                    });
                 </script>
             </div>
             <div class="col-sm-6">
