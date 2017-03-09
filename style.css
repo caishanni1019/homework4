@@ -1,0 +1,52 @@
+.image {
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489048243802&di=1b97a3f09334e8686fd1b9e08e5cb9ad&imgtype=0&src=http%3A%2F%2Fwww.08160.cn%2Fuploads%2Fallimg%2F160728%2F17-160HQ10453.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "微软雅黑", "Arial";
+    background-color: #1A242C;
+}
+
+h1 {
+    font-family: "微软雅黑";
+    font-size: 50px;
+    color: #cdcdcd;
+    line-height: 54px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.wordTitle {
+    font-family: "微软雅黑";
+    font-size: 28px;
+    color: whitesmoke;
+    line-height: 54px;
+    margin-top: 20px;
+}
+
+.word {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    line-height: 32px;
+    color: #cdcdcd;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+a {
+    color: #cdcdcd;
+    text-decoration: none;
+}
+
+.divcss5-a,
+.divcss5-b {
+    width: 150px;
+    height: 100px;
+    float: left;
+    border: 1px solid #F00
+}

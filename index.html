@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CAI Shanni's Forth Homework</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>CAI Shanni's Fourth Homework</title>
+</head>
+
+<body>
+    <header class="image">
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h1>2016中国的楼市</h1>
+                <p class="wordTitle">以去三四线城市库存为出发点，却再度推高一二线城市房价</p>
+                <p style="color: whitesmoke"><a href="http://datanews.caixin.com/mobile/fang2016/pc/">新闻来源：财新数字说</a></p>
+                <hr style="height:1px;border:none;border-top:1px solid #555555;" />
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-sm-6">
+                <h2 class="wordTitle"> 工作多少年你可以购买100㎡的居住房？ </h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label for="amount" class="word">你的月收入(元/月)：</label>
+                            <input class="form-control" type="text" id="amount">
+                            <label for="unit" class="word">你所在城市的房价（元/㎡）：</label>
+                            <input class="form-control" type="text" id="unit">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <button class="btn btn-primary" id="calculate">计算</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label for="total" class="word">年数:</label>
+                            <input class="form-control" type="text" id="total">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    $(function() { // Routine format; put all your jQuery initialisation inside
+                        $('#calculate').click(function() { // Set the mouse click event hander for element "#calculate"
+                            // Normal Javascript here
+                            // Do whatever you want
+                            var amount = $('#amount').val();
+                            var unit = $('#unit').val();
+                            var total = 100 / (amount / unit) / 12;
+                            $('#total').val(total);
+                        });
+                    }); // Routine format; put all your jQuery initialisation inside
+                </script>
+            </div>
+            <div class="col-sm-6">
+                <div style="overflow: auto;height: 400px;width: 500px;">
+                    <br>
+                    <p class="word">
+                        <br> 2016年的楼市，风起云涌。
+                        <br> 根据国家统计局数据，2016年前11个月，中国商品房销售额102503亿元，这是这个指标历史上首次突破10万亿元。其中住宅销售额8.7万亿元，劲增近40%。11月，中国70个大中城市新建住宅价格环比增幅0.6%。上涨自年初就没有停歇过，以去库存为开端，演进至年中的价格飙涨，倒逼出四季度的严厉调控。三季度时，热点城市的月度房价指数环比涨幅最高达到7%甚至8%，同比涨幅20%～40%的城市比比皆是。而价格指数的敏感程度往往弱于居民实际交易中感受到的价格波动，在许多大城市，亲身经历过这一年楼市交易的人们共同的感受是：太疯狂了。
+                        <br> 进入四季度，在空前严厉的调控下，价格终于显露出“涨幅收窄”，然而对普通人来说，“涨地慢了也还在涨”。据中国指数研究院，2016 年11月，全国100个城市(新建)住宅平均价格为12938元/平方米，环比涨幅较10月回落0.77个百分点。较一年前的2015年11月，全国平均已经上涨2000元/平方米。
+                        <br> 2016年的楼市，最热的并不在一线城市。合肥、苏州、南京、厦门、郑州、惠州、昆山 ……，热点省会、一线周边才是这一年楼市最炙手可热的主角。京沪深在严格的调控之下，涨幅克制，但基于高昂的单价，投射到绝对价格上那也是“跳涨”。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p style="color:lightskyblue;text-align: center;">reference:
+                    <br><a href="http://datanews.caixin.com/mobile/fang2016/pc/">新闻来源：财新数字说</a>
+
+                    <br> code by CAI Shanni
+                    <br><a href="#">back to top</a></p>
+            </div>
+        </div>
+</body>
+
+</html>
